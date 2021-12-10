@@ -40,6 +40,7 @@ install: prepare
 	pipenv install
 
 develop: prepare
+	pipenv lock --pre --clear
 	pipenv install --dev
 
 clean:
